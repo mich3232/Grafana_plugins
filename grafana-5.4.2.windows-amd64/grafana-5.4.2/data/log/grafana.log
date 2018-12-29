@@ -1,0 +1,449 @@
+t=2018-12-29T13:57:37+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-29T13:57:37+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-29T13:57:37+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-29T13:57:37+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-29T13:57:37+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-29T13:57:37+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-29T13:57:37+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-29T13:57:37+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-29T13:57:37+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-29T13:57:37+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-29T13:57:37+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-29T13:57:37+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-29T13:57:37+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-29T13:57:37+1100 lvl=info msg="Executing migration" logger=migrator id="create migration_log table"
+t=2018-12-29T13:57:37+1100 lvl=info msg="Executing migration" logger=migrator id="create user table"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index user.login"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index user.email"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_user_login - v1"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_user_email - v1"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table user to user_v1 - v1"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="create user table v2"
+t=2018-12-29T13:57:38+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_user_login - v2"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_user_email - v2"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="copy data_source v1 to v2"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old table user_v1"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="Add column help_flags1 to user table"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="Update user table charset"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="Add last_seen_at column to user"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="Add missing user data"
+t=2018-12-29T13:57:39+1100 lvl=info msg="Executing migration" logger=migrator id="create temp user table v1-7"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_email - v1-7"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_org_id - v1-7"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_code - v1-7"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_status - v1-7"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="Update temp_user table charset"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="create star table"
+t=2018-12-29T13:57:40+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index star.user_id_dashboard_id"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="create org table v1"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_org_name - v1"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="create org_user table v1"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_org_user_org_id - v1"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_org_user_org_id_user_id - v1"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="Update org table charset"
+t=2018-12-29T13:57:41+1100 lvl=info msg="Executing migration" logger=migrator id="Update org_user table charset"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="Migrate all Read Only Viewers to Viewers"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard table"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="add index dashboard.account_id"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_account_id_slug"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_tag table"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_tag.dasboard_id_term"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_dashboard_tag_dashboard_id_term - v1"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table dashboard to dashboard_v1 - v1"
+t=2018-12-29T13:57:42+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard v2"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_org_id - v2"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_org_id_slug - v2"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="copy dashboard v1 to v2"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="drop table dashboard_v1"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="alter dashboard.data to mediumtext v1"
+t=2018-12-29T13:57:43+1100 lvl=info msg="Executing migration" logger=migrator id="Add column updated_by in dashboard - v2"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add column created_by in dashboard - v2"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add column gnetId in dashboard"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add index for gnetId in dashboard"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add column plugin_id in dashboard"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add index for plugin_id in dashboard"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Add index for dashboard_id in dashboard_tag"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Update dashboard table charset"
+t=2018-12-29T13:57:44+1100 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_tag table charset"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Add column folder_id in dashboard"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Add column isFolder in dashboard"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Add column has_acl in dashboard"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Add column uid in dashboard"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Update uid column values in dashboard"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Add unique index dashboard_org_id_uid"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Remove unique index org_id_slug"
+t=2018-12-29T13:57:45+1100 lvl=info msg="Executing migration" logger=migrator id="Update dashboard title length"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="Add unique index for dashboard_org_id_title_folder_id"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_provisioning"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table dashboard_provisioning to dashboard_provisioning_tmp_qwerty - v1"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_provisioning v2"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_provisioning_dashboard_id - v2"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_provisioning_dashboard_id_name - v2"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="copy dashboard_provisioning v1 to v2"
+t=2018-12-29T13:57:46+1100 lvl=info msg="Executing migration" logger=migrator id="drop dashboard_provisioning_tmp_qwerty"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="Add check_sum column"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="create data_source table"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="add index data_source.account_id"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index data_source.account_id_name"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_data_source_account_id - v1"
+t=2018-12-29T13:57:47+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_data_source_account_id_name - v1"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table data_source to data_source_v1 - v1"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="create data_source table v2"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_data_source_org_id - v2"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_data_source_org_id_name - v2"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="copy data_source v1 to v2"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old table data_source_v1 #2"
+t=2018-12-29T13:57:48+1100 lvl=info msg="Executing migration" logger=migrator id="Add column with_credentials"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="Add secure json data column"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="Update data_source table charset"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="Update initial version to 1"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="Add read_only data column"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="create api_key table"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="add index api_key.account_id"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="add index api_key.key"
+t=2018-12-29T13:57:49+1100 lvl=info msg="Executing migration" logger=migrator id="add index api_key.account_id_name"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_api_key_account_id - v1"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_api_key_key - v1"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_api_key_account_id_name - v1"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table api_key to api_key_v1 - v1"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="create api_key table v2"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_api_key_org_id - v2"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_api_key_key - v2"
+t=2018-12-29T13:57:50+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_api_key_org_id_name - v2"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="copy api_key v1 to v2"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old table api_key_v1"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="Update api_key table charset"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_snapshot table v4"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="drop table dashboard_snapshot_v4 #1"
+t=2018-12-29T13:57:51+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_snapshot table v5 #2"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_snapshot_key - v5"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_snapshot_delete_key - v5"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_snapshot_user_id - v5"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="alter dashboard_snapshot to mediumtext v2"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_snapshot table charset"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="create quota table v1"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_quota_org_id_user_id_target - v1"
+t=2018-12-29T13:57:52+1100 lvl=info msg="Executing migration" logger=migrator id="Update quota table charset"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="create plugin_setting table"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="create index UQE_plugin_setting_org_id_plugin_id - v1"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="Add column plugin_version to plugin_settings"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="Update plugin_setting table charset"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="create session table"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old table playlist table"
+t=2018-12-29T13:57:53+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old table playlist_item table"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="create playlist table v2"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="create playlist item table v2"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="Update playlist table charset"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="Update playlist_item table charset"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="drop preferences table v2"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="drop preferences table v3"
+t=2018-12-29T13:57:54+1100 lvl=info msg="Executing migration" logger=migrator id="create preferences table v3"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="Update preferences table charset"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="Add column team_id in preferences"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="Update team_id column values in preferences"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="create alert table v1"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="add index alert org_id & id "
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="add index alert state"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="add index alert dashboard_id"
+t=2018-12-29T13:57:55+1100 lvl=info msg="Executing migration" logger=migrator id="create alert_notification table v1"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Add column is_default"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Add column frequency"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Add column send_reminder"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Add column disable_resolve_message"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="add index alert_notification org_id & name"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Update alert table charset"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="Update alert_notification table charset"
+t=2018-12-29T13:57:56+1100 lvl=info msg="Executing migration" logger=migrator id="create notification_journal table v1"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="add index notification_journal org_id & alert_id & notifier_id"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="drop alert_notification_journal"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="create alert_notification_state table v1"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="add index alert_notification_state org_id & alert_id & notifier_id"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="Add for to alert table"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="Drop old annotation table v4"
+t=2018-12-29T13:57:57+1100 lvl=info msg="Executing migration" logger=migrator id="create annotation table v5"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="add index annotation 0 v3"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="add index annotation 1 v3"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="add index annotation 2 v3"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="add index annotation 3 v3"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="add index annotation 4 v3"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="Update annotation table charset"
+t=2018-12-29T13:57:58+1100 lvl=info msg="Executing migration" logger=migrator id="Add column region_id to annotation table"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Drop category_id index"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Add column tags to annotation table"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Create annotation_tag table v2"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Add unique index annotation_tag.annotation_id_tag_id"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Update alert annotations and set TEXT to empty"
+t=2018-12-29T13:57:59+1100 lvl=info msg="Executing migration" logger=migrator id="Add created time to annotation table"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="Add updated time to annotation table"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="Add index for created in annotation table"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="Add index for updated in annotation table"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="Convert existing annotations from seconds to milliseconds"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="create test_data table"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard_version table v1"
+t=2018-12-29T13:58:00+1100 lvl=info msg="Executing migration" logger=migrator id="add index dashboard_version.dashboard_id"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_version.dashboard_id and dashboard_version.version"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="Set dashboard version to 1 where 0"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="save existing dashboard data in dashboard_version table v1"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="alter dashboard_version.data to mediumtext v1"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="create team table"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="add index team.org_id"
+t=2018-12-29T13:58:01+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index team_org_id_name"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="create team member table"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="add index team_member.org_id"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index team_member_org_id_team_id_user_id"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="Add column email to team table"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="Add column external to team_member table"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="create dashboard acl table"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="add index dashboard_acl_dashboard_id"
+t=2018-12-29T13:58:02+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_acl_dashboard_id_user_id"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_acl_dashboard_id_team_id"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="save default acl rules in dashboard_acl table"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="create tag table"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="add index tag.key_value"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="create login attempt table"
+t=2018-12-29T13:58:03+1100 lvl=info msg="Executing migration" logger=migrator id="add index login_attempt.username"
+t=2018-12-29T13:58:04+1100 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_login_attempt_username - v1"
+t=2018-12-29T13:58:04+1100 lvl=info msg="Executing migration" logger=migrator id="Rename table login_attempt to login_attempt_tmp_qwerty - v1"
+t=2018-12-29T13:58:04+1100 lvl=info msg="Executing migration" logger=migrator id="create login_attempt v2"
+t=2018-12-29T13:58:04+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_login_attempt_username - v2"
+t=2018-12-29T13:58:04+1100 lvl=info msg="Executing migration" logger=migrator id="copy login_attempt v1 to v2"
+t=2018-12-29T13:58:05+1100 lvl=info msg="Executing migration" logger=migrator id="drop login_attempt_tmp_qwerty"
+t=2018-12-29T13:58:05+1100 lvl=info msg="Executing migration" logger=migrator id="create user auth table"
+t=2018-12-29T13:58:05+1100 lvl=info msg="Executing migration" logger=migrator id="create index IDX_user_auth_auth_module_auth_id - v1"
+t=2018-12-29T13:58:05+1100 lvl=info msg="Executing migration" logger=migrator id="alter user_auth.auth_id to length 190"
+t=2018-12-29T13:58:05+1100 lvl=info msg="Created default admin" logger=sqlstore user=admin
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-29T13:58:05+1100 lvl=info msg="Plugin dir created" logger=plugins dir=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-29T13:58:05+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-29T13:58:05+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2018-12-29T14:09:43+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=12 size=29 referer=
+t=2018-12-29T14:15:09+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/datasources/proxy/2/render status=502 remote_addr=[::1] time_ms=3 size=0 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:15:27+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=POST path=/render status=404 remote_addr="::1, ::1" time_ms=31 size=21143 referer=
+t=2018-12-29T14:15:27+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/datasources/proxy/2/render status=404 remote_addr=[::1] time_ms=213 size=21143 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:15:37+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=PUT path=/api/datasources/2 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:15:37+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=5 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:16:08+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=PUT path=/api/datasources/2 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:16:08+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:17:06+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=5 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:06+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:16+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:16+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:24+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=24 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:24+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:26+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:26+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:34+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:34+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:36+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:36+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:17:43+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:43+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:17:46+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=33 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:17:46+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:17:47+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:17:47+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:17:51+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=15 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:17:51+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:06+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:06+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:15+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:15+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:19+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=4 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:19+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=32 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:26+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:26+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:29+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:18:29+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:18:35+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:18:35+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:18:54+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:18:54+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:18:58+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:18:58+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:19:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=6 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:19:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:19:27+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/alerts status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/alerting/list
+t=2018-12-29T14:19:27+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/alerting/list
+t=2018-12-29T14:19:30+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:19:30+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:19:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/org/users status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:19:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/org/invites status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:19:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:19:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:19:39+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:19:39+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:19:50+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:19:50+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:02+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:02+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:05+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:05+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:07+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:07+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:23+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/users/search status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/admin/users
+t=2018-12-29T14:20:23+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/admin/users
+t=2018-12-29T14:20:29+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:29+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=32 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:33+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:41+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:41+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:42+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/users/search status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/admin/users
+t=2018-12-29T14:20:42+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/admin/users
+t=2018-12-29T14:20:44+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:44+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:45+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:45+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:45+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:46+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:46+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:46+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:47+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:47+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:48+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:48+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:49+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/org/users status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:20:49+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/org/invites status=401 remote_addr=[::1] time_ms=6 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:20:49+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:20:49+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/org/users
+t=2018-12-29T14:20:50+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:50+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=6 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:52+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/alerts status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/alerting/list
+t=2018-12-29T14:20:52+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/alerting/list
+t=2018-12-29T14:20:54+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=4 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:20:54+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=4 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:20:55+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:55+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:56+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:56+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:20:57+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:57+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:58+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:20:58+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:20:59+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:20:59+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:00+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:00+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:01+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:01+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:02+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:02+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/1 status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:04+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:21:07+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:07+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:08+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources/2 status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:21:08+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:21:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:21:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new
+t=2018-12-29T14:21:11+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/datasources status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:11+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer=http://localhost:3000/datasources
+t=2018-12-29T14:21:12+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/plugins status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new?gettingstarted
+t=2018-12-29T14:21:12+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=2 size=26 referer=http://localhost:3000/datasources/new?gettingstarted
+t=2018-12-29T14:21:12+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/dashboards/home status=401 remote_addr=[::1] time_ms=1 size=26 referer="http://localhost:3000/?orgId=1"
+t=2018-12-29T14:21:12+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/api/login/ping status=401 remote_addr=[::1] time_ms=3 size=26 referer="http://localhost:3000/?orgId=1"
+t=2018-12-29T14:29:08+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=POST path=/api/tsdb/query status=400 remote_addr=[::1] time_ms=2068 size=323 referer=http://localhost:3000/datasources/edit/1
+t=2018-12-29T14:34:01+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/version status=404 remote_addr="::1, ::1" time_ms=6 size=21143 referer=
+t=2018-12-29T14:34:01+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/2/version status=404 remote_addr=[::1] time_ms=13 size=21143 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T14:34:06+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=DELETE path=/api/datasources/2 status=401 remote_addr=[::1] time_ms=1 size=26 referer=http://localhost:3000/datasources/edit/2
+t=2018-12-29T15:24:55+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-29T15:24:55+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-29T15:24:55+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-29T15:24:55+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-29T15:24:55+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-29T15:24:55+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-29T15:24:55+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-29T15:24:55+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-29T15:24:55+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-29T15:24:55+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-29T15:24:55+1100 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-29T15:24:55+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-29T15:24:55+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2018-12-29T18:52:30+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-29T18:52:30+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-29T18:52:30+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-29T18:52:30+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-29T18:52:30+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-29T18:52:30+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-29T18:52:30+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-29T18:52:30+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-29T18:52:30+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-29T18:52:30+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-29T18:52:31+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-29T18:52:31+1100 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-29T18:52:31+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-29T18:52:31+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2018-12-29T18:52:51+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=17 size=29 referer=
+t=2018-12-29T18:52:51+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=19 size=24 referer=
+t=2018-12-29T18:56:34+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-29T18:56:34+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-29T18:56:34+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-29T18:56:34+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-29T18:56:34+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-29T18:56:34+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-29T18:56:34+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-29T18:56:34+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-29T18:56:34+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-29T18:56:34+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-29T18:56:34+1100 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-29T18:56:34+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-29T18:56:34+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
