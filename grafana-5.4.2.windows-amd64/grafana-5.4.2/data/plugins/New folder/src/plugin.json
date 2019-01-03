@@ -1,0 +1,26 @@
+{
+   "type": "panel",
+    "name": "Weather",
+    "id": "grafana-weather-panel",
+    
+    "info": {
+        "description": "Weather panel for Grafana",
+        
+    "author": {
+        "name": "Michelle Vinall",
+        "url": "http://www.michellevinallwebsite.com/"
+    },
+    "keywords": ["weather", "panel"],
+    "logos": { },
+    "links": [ ],
+    "screenshots": [ ],
+    "version": "0.0.1",
+    "updated": "2019-01-01"
+  },
+  "dependencies": {
+    "grafanaVersion": "4.6.x",
+    "plugins": [ ]
+  }
+}
+
+   

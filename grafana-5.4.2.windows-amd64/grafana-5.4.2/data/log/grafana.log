@@ -548,3 +548,107 @@ t=2018-12-29T23:36:43+1100 lvl=info msg="Stopped ProvisioningService" logger=ser
 t=2018-12-29T23:36:43+1100 lvl=info msg="Stopped Stream Manager"
 t=2018-12-29T23:36:48+1100 lvl=info msg="Stopped PluginManager" logger=server reason="context canceled"
 t=2018-12-29T23:36:48+1100 lvl=eror msg="Server shutdown" logger=server reason="listen tcp 0.0.0.0:3000: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted."
+t=2018-12-29T23:43:34+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=7 size=29 referer=
+t=2018-12-29T23:43:34+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=15 size=24 referer=
+t=2018-12-29T23:44:18+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/module.js status=404 remote_addr=[::1] time_ms=6 size=25381 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2018-12-29T23:45:26+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/5/query status=502 remote_addr=[::1] time_ms=1306 size=0 referer="http://localhost:3000/dashboard/new?orgId=1"
+t=2018-12-30T13:55:01+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-30T13:55:01+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-30T13:55:01+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-30T13:55:01+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-30T13:55:01+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-30T13:55:01+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-30T13:55:01+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-30T13:55:01+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-30T13:55:01+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-30T13:55:01+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-30T13:55:01+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-30T13:55:01+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-30T13:55:01+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-30T13:55:02+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-30T13:55:02+1100 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2018-12-30T13:55:02+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-30T13:55:03+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-30T13:55:03+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2018-12-30T13:56:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=25 size=29 referer=
+t=2018-12-30T13:56:09+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=105 size=24 referer=
+t=2018-12-31T13:11:06+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2018-12-31T13:11:06+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2018-12-31T13:11:06+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2018-12-31T13:11:06+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2018-12-31T13:11:06+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2018-12-31T13:11:06+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2018-12-31T13:11:06+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2018-12-31T13:11:06+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2018-12-31T13:11:06+1100 lvl=info msg="App mode production" logger=settings
+t=2018-12-31T13:11:06+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2018-12-31T13:11:06+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2018-12-31T13:11:06+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2018-12-31T13:11:06+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2018-12-31T13:11:07+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2018-12-31T13:11:09+1100 lvl=info msg="Registering plugin" logger=plugins name=Clock
+t=2018-12-31T13:11:09+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2018-12-31T13:11:09+1100 lvl=info msg="Initializing Stream Manager"
+t=2018-12-31T13:11:09+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2018-12-31T13:37:48+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=66 size=29 referer=
+t=2018-12-31T13:37:48+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=117 size=24 referer=
+t=2018-12-31T13:37:55+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=4 size=25794 referer="http://localhost:3000/?orgId=1"
+t=2018-12-31T13:38:00+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=62 size=25794 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2018-12-31T13:38:05+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/module.js status=404 remote_addr=[::1] time_ms=32 size=25794 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2018-12-31T13:38:16+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=4 size=25794 referer="http://localhost:3000/?orgId=1"
+t=2018-12-31T13:44:59+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=163 size=25794 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2018-12-31T13:45:04+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dashboard/new status=404 remote_addr=[::1] time_ms=116 size=25794 referer=
+t=2018-12-31T13:45:05+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=10 size=25794 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2018-12-31T13:45:16+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/dashboard/new status=404 remote_addr=[::1] time_ms=5 size=25794 referer=
+t=2018-12-31T13:45:16+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/public/plugins/grafana-clock-panel/img/clock_panel_logo.svg status=404 remote_addr=[::1] time_ms=4 size=25794 referer="http://localhost:3000/dashboard/new?gettingstarted&orgId=1"
+t=2019-01-03T21:52:49+1100 lvl=info msg="Starting Grafana" logger=server version=5.4.2 commit=d812109 branch=HEAD compiled=2018-12-13T23:49:23+1100
+t=2019-01-03T21:52:49+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2/conf/defaults.ini
+t=2019-01-03T21:52:49+1100 lvl=info msg="Config loaded from" logger=settings file=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\custom.ini
+t=2019-01-03T21:52:49+1100 lvl=info msg="Path Home" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2
+t=2019-01-03T21:52:49+1100 lvl=info msg="Path Data" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data
+t=2019-01-03T21:52:49+1100 lvl=info msg="Path Logs" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\log
+t=2019-01-03T21:52:49+1100 lvl=info msg="Path Plugins" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\data\\plugins
+t=2019-01-03T21:52:49+1100 lvl=info msg="Path Provisioning" logger=settings path=C:\\Users\\Michelle\\Desktop\\Grafana_plugins\\grafana-5.4.2.windows-amd64\\grafana-5.4.2\\conf\\provisioning
+t=2019-01-03T21:52:49+1100 lvl=info msg="App mode production" logger=settings
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing HTTPServer" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing SqlStore" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+t=2019-01-03T21:52:49+1100 lvl=info msg="Starting DB migration" logger=migrator
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing SearchService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing RenderingService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing AlertingService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing DatasourceCacheService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing HooksService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing InternalMetricsService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing CleanUpService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing NotificationService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing ProvisioningService" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Initializing PluginManager" logger=server
+t=2019-01-03T21:52:49+1100 lvl=info msg="Starting plugin search" logger=plugins
+t=2019-01-03T21:52:50+1100 lvl=info msg="Registering plugin" logger=plugins name="Plugin Template Name"
+t=2019-01-03T21:52:50+1100 lvl=info msg="Initializing TracingService" logger=server
+t=2019-01-03T21:52:50+1100 lvl=info msg="Initializing Stream Manager"
+t=2019-01-03T21:52:50+1100 lvl=info msg="HTTP Server Listen" logger=http.server address=0.0.0.0:3000 protocol=http subUrl= socket=
+t=2019-01-03T21:53:00+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/ status=302 remote_addr=[::1] time_ms=8 size=29 referer=
+t=2019-01-03T21:53:00+1100 lvl=info msg="Request Completed" logger=context userId=0 orgId=0 uname= method=GET path=/login status=302 remote_addr=[::1] time_ms=62 size=24 referer=
+t=2019-01-03T21:54:05+1100 lvl=info msg="Request Completed" logger=context userId=1 orgId=1 uname=admin method=GET path=/api/datasources/proxy/5/query status=502 remote_addr=[::1] time_ms=1338 size=0 referer="http://localhost:3000/dashboard/new?orgId=1"
